@@ -155,18 +155,18 @@ def generate_content(name, chakra_info, phoneme):
     location, text_ref, energy = chakra_texts[chakra]
     deity_role, deity_ref, deity_quality = deity_texts[deity]
     lore = (
-        f"The name {name}, resonating with the phoneme ‘{phoneme}’, aligns with the {chakra} Chakra, the {location}’s seat of {energy}, as described in {text_ref}. "
-        f"This chakra embodies the Bhava of {bhava.lower()}, guiding {name}’s journey toward {bhava.split(',')[0].lower()}. "
-        f"The {rasa} Rasa, evoking {sthayibhava.lower()}, stirs the heart with {rasa.lower()}, as per *Natya Shastra*’s aesthetic wisdom. "
-        f"Guided by {deity}, the {deity_role} from {deity_ref}, {name}’s essence reflects {deity_quality}. "
-        f"Through the {chakra}’s vibration, {name} harmonizes personal {bhava.split(',')[0].lower()} with divine {rasa.lower()}, forging a path of spiritual resonance."
+        f"The name {name}, resonating with the phoneme '{phoneme}', aligns with the {chakra} Chakra, the {location}'s seat of {energy}, as described in {text_ref}. "
+        f"This chakra embodies the Bhava of {bhava.lower()}, guiding {name}'s journey toward {bhava.split(',')[0].lower()}. "
+        f"The {rasa} Rasa, evoking {sthayibhava.lower()}, stirs the heart with {rasa.lower()}, as per *Natya Shastra*'s aesthetic wisdom. "
+        f"Guided by {deity}, the {deity_role} from {deity_ref}, {name}'s essence reflects {deity_quality}. "
+        f"Through the {chakra}'s vibration, {name} harmonizes personal {bhava.split(',')[0].lower()} with divine {rasa.lower()}, forging a path of spiritual resonance."
     )
 
     # Dynamic Story (100-150 words)
     settings = {
         "Muladhara": "village by the Ganges",
-        "Svadhisthana": "Vrindavan’s lush groves",
-        "Manipura": "Kurukshetra’s battlefield",
+        "Svadhisthana": "Vrindavan's lush groves",
+        "Manipura": "Kurukshetra's battlefield",
         "Anahata": "desert village oasis",
         "Vishuddha": "Himalayan peak",
         "Ajna": "forest cave",
@@ -185,7 +185,7 @@ def generate_content(name, chakra_info, phoneme):
         "Muladhara": "rebuilt their home",
         "Svadhisthana": "wove a vibrant tapestry",
         "Manipura": "charged with a blazing bow",
-        "Anahata": "shared their heart’s warmth",
+        "Anahata": "shared their heart's warmth",
         "Vishuddha": "chanted a sacred hymn",
         "Ajna": "meditated in silence",
         "Sahasrara": "embraced cosmic unity"
@@ -195,18 +195,18 @@ def generate_content(name, chakra_info, phoneme):
     action = actions[chakra]
     story = (
         f"In {setting}, {name} felt their {chakra} Chakra awaken, stirring the Bhava of {bhava.lower()}. "
-        f"Facing {challenge}, their heart wavered, yet the phoneme ‘{phoneme}’ resonated within. "
+        f"Facing {challenge}, their heart wavered, yet the phoneme '{phoneme}' resonated within. "
         f"Through {action}, {name} channeled {energy}, and {rasa} Rasa bloomed, filling them with {sthayibhava.lower()}. "
         f"{deity}, appearing in a divine vision, bestowed {deity_quality}. "
-        f"{name}’s {bhava.split(',')[0].lower()} inspired those around, uniting them in {rasa.lower()}, echoing {deity_ref}’s timeless grace.”
+        f"{name}'s {bhava.split(',')[0].lower()} inspired those around, uniting them in {rasa.lower()}, echoing {deity_ref}'s timeless grace."
     )
 
     # Dynamic Poem (4-8 lines)
     poem = (
-        f"{name}’s call, with ‘{phoneme}’ so bright,\n"
-        f"{chakra}’s {energy}, a guiding light.\n"
-        f"{bhava}’s heart, in {rasa}’s sway,\n"
-        f"{deity}’s {deity_quality} paves the way.\n"
+        f"{name}'s call, with '{phoneme}' so bright,\n"
+        f"{chakra}'s {energy}, a guiding light.\n"
+        f"{bhava}'s heart, in {rasa}'s sway,\n"
+        f"{deity}'s {deity_quality} paves the way.\n"
     )
 
     return lore, story, poem
